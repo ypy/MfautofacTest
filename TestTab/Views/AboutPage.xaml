@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestTab.Views.AboutPage"
+             xmlns:local="clr-namespace:TestTab.Renderers"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+              ios:Page.UseSafeArea="true"
+             ios:NavigationPage.HideNavigationBarSeparator="true">
+    <NavigationPage.TitleView>
+        <Label Text="速成教育会员中心" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+    </NavigationPage.TitleView>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Page Level Resources: Compatibile with Xamarin Live Player -->
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    
+     <StackLayout Padding="20"><Label Text="Hello World"/>
+      <Frame VerticalOptions="Center" HorizontalOptions="Fill"
+                               HeightRequest="290" Padding="0" HasShadow="false"
+                               IsClippedToBounds="true" CornerRadius="10"  >
+           <!-- <Frame.BackgroundColor>
+            <Color x:FactoryMethod="FromRgba">
+                <x:Arguments>
+                    <x:Int32>44</x:Int32>
+                    <x:Int32>44</x:Int32>
+                    <x:Int32>44</x:Int32>
+                    <x:Int32>128</x:Int32>
+                </x:Arguments>
+            </Color>
+        </Frame.BackgroundColor>-->
+            <StackLayout HeightRequest="50">
+                <local:ImageEntry TextColor="Black" 
+                        LineColor="Black"          
+                        Placeholder="Emil" 
+                        HorizontalOptions="FillAndExpand"/>
+                <Button Text="test" HorizontalOptions="Center" HeightRequest="40" WidthRequest="40" BackgroundColor="Green" CornerRadius="20"/>
+           <Entry />
+            </StackLayout>
+        </Frame>
+        </StackLayout>
+  <!-- <StackLayout >
+       <Grid  BackgroundColor="Red" Margin="0,5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Image Source="images.jpeg" Aspect="AspectFill" Grid.Row="0"/>
+            <Button Grid.Row="0" Text="test" BackgroundColor="Transparent" Command="{Binding TestListViewCommand}" CommandParameter="test"/>
+            </Grid>
+        <Button BackgroundColor="Gray" x:Name="testEffect" Text="testEffect" Clicked="Handle_Clicked"/>
+    </StackLayout>-->
+</ContentPage>
