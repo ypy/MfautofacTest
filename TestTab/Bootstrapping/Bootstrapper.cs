@@ -39,13 +39,13 @@ namespace TestTab.Bootstrapping
             var navHome = new NavigationPage(viewFactory.Resolve<ItemsViewModel>());
 
             navHome.Icon = "home.png";
-            navHome.Title = "Home";
+            //navHome.Title = "Home";
             navHome.BarBackgroundColor = Color.White;
             ((TabbedPage)mainPage).Children.Add(navHome);
 
             var navAbout = new NavigationPage(viewFactory.Resolve<AboutViewModel>());
             navAbout.Icon = "list.png";
-            navAbout.Title = "About";
+            //navAbout.Title = "About";
             navAbout.BarBackgroundColor = Color.White;
             ((TabbedPage)mainPage).Children.Add(navAbout);
 

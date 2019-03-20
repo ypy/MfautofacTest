@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TestTab.Views.ItemsPage"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
-              x:Name="BrowseItemsPage" ios:Page.UseSafeArea="true">
+              x:Name="BrowseItemsPage" ios:Page.UseSafeArea="true" BackgroundColor="White">
     
     <NavigationPage.TitleView>
         <Label Text="Hello World" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>

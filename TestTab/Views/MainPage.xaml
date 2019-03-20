@@ -4,9 +4,13 @@
             xmlns:views="clr-namespace:TestTab.Views"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom"
+            
             xmlns:local="clr-namespace:TestTab.Renderer"
             android:TabbedPage.BarItemColor="#b3b3b3"
             android:TabbedPage.BarSelectedItemColor="#c6e9f6"
+            android:TabbedPage.BarBackgroundColor="#ffffff"
             android:TabbedPage.IsSwipePagingEnabled="true"
-            x:Class="TestTab.Views.MainPage" BackgroundColor="White">
+            android:TabbedPage.HeightRequest="20"
+            x:Class="TestTab.Views.MainPage" BackgroundColor="#b3b3b3" Padding="0,0,0,1">
+   
 </TabbedPage>
