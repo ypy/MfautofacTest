@@ -72,6 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Renderers\NavigationBarRemoveBorderRenderer.cs" />
     <Compile Include="Renderers\ImageEntryRenderer.cs" />
+    <Compile Include="Renderers\MyTabbedPageRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
